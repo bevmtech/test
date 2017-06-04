@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/form.css">
+	<title>Sedona_Form</title>
+</head>
+<body>
+	<header class="page-header">
+		<h1 class="page-header__title">Оставьте свой отзыв</h1> <!-- скрыт! -->
+		<nav class="main-nav">
+			<!--<span class="main-nav__toggler"><span></span></span>-->
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="btn main-nav__item  main-nav__item--active">
+						<a>главная</a>
+					</li>
+					<li class="btn main-nav__item">
+						<a href="">фото и видео</a>
+					</li>
+					<li class="btn main-nav__item">
+						<a href="">форма отзыва</a>
+					</li>
+					<li class="btn main-nav__item">
+						<a href="">html academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="page-header__logo">
+			<img src="" width="40px" height="40px" alt="city of sedona">
+		</div>
+		<div class="page-header__promo-pict">
+			<img src="" width="100%"  alt="Заглавная картина">
+		</div>
+	</header>
+	<main class="main-page">
+		<div class="main-page__wrapper">
+			<section class="description">
+				<div class="description__wrapper">
+					<h2 class="description__title">оставте свой отзыв</h2>
+					<p class="description__text">помогите нашим отелям стать лучше! оставьте отзыв о них а также о посещенных вами достопримечательностях</p>
+				</div>
+			</section>
+			<form action="https://echo.htmlacademy.ru/" method="post" class="review">
+				<div class="review__wrapper">
+					<div class="review__item">
+						<h2 class="review__item-title">представтесь</h2>
+						<label class="input">
+							<div class="input__descr input__descr--name">имя</div>
+							<input class="input__id input__id--name" type="text" required name="name"><!--модификатор изменяет ширину поля-->
+						</label>
+						<label class="input">
+							<div class="input__descr input__descr--id">фамилия</div>
+							<input class="input__id" type="text" required name="second-name">
+						</label>
+						<label class="input">
+							<div class="input__descr input__descr--id">отчество</div>
+							<input class="input__id" type="text" name="fathers-name">
+						</label>
+					<div>
+					<div class="review__item">
+						<h2 class="review__item-title">контактная информация:</h2>
+						<label class="input">
+							<div class="input__descr input__descr--contact">контактый телефон*</div>
+							<input class="input__contact input__contact--tel" type="tel" required name="tel" placeholder="введите телефон"><!--модификаторы для логотипа-->
+						</label>
+						<label class="input">
+							<div class="input__descr input__descr--contact">электронная почта*</div>
+							<input class="input__contact input__contact--email" type="email" required name="email" placeholder="введите e-mail">
+						</label>
+					</div>
+					<div class="review__item">
+						<h2 class="review__item-title">ваше общее впечатление:</h2>
+						<label class="input">
+							<input class="input__radio" type="radio" name="rating" checked value="good">
+							<div class="input__descr">Скорее положительное</div>
+						</label>
+						<label class="input">
+						<input class="input__radio" type="radio" name="rating" value="bad">
+							<div class="input__descr">Скорее отрицательное</div>
+						</label>
+						<label class="input">
+							<input class="input__radio" type="radio" name="rating" value="dont_know">
+							<div class="input__descr">Затрудняюсь ответить</div>
+						</label>
+					</div>
+					<div class="review__item">
+						<h2 class="review__item-title">посещенные достопримечательности</h2>
+						<label class="input">
+							<input class="input__checkbox" type="checkbox" name="devil bridge" checked>
+							<div class="input__descr">Мост Дьявола</div>
+						</label>
+						<label class="input">
+							<input class="input__checkbox" type="checkbox" name="slide-park" checked>
+							<div class="input__descr">Слайд-парк</div>
+						</label>
+						<label class="input">
+							<input class="input__checkbox" type="checkbox" name="mountain">
+							<div class="input__descr">Гора колокол</div>
+						</label>
+						<label class="input">
+							<input class="input__checkbox" type="checkbox" name="red rocks" checked>
+							<div class="input__descr">Красные скалы</div>
+						</label>
+					</div>
+					<div class="review__item">
+						<h2 class="review__item-title">опишите свои эмоции</h2>
+						<label class="input">
+							<textarea class="input__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+						</label>
+					</div>
+					<div class="submit">
+						<input class="btn submit__btn" type="submit" value="Отправить отзыв" name="submit">
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<p class="page-footer__title">#visitsedona</p>
+			<p class="page-footer__social">
+				<span class="social-links">
+					<a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+					<a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+					<a class="social-link social-link--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+				</span>
+			</p>
+			<p class="page-footer__copyright">
+				<a class="copyright" href="" >разработано</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
